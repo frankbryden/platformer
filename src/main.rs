@@ -208,7 +208,7 @@ impl EventHandler for State {
 
         let player_rect = Rect::new(self.player.pos.x - self.coin_spawner.coin_radius/2.0, self.player.pos.y - self.coin_spawner.coin_radius/2.0, self.player_sprite_width + self.coin_spawner.coin_radius/2.0, self.player_sprite_height + self.coin_spawner.coin_radius/2.0);
         let r = graphics::Mesh::new_rectangle(ctx, graphics::DrawMode::stroke(1.0), player_rect, graphics::WHITE)?;
-        graphics::draw(ctx, &r, DrawParam::default())?;
+        //graphics::draw(ctx, &r, DrawParam::default())?;
         self.sprite_batch.clear();
 
         self.coin_spawner.draw(ctx);
@@ -316,7 +316,7 @@ fn main() {
                     .resizable(true),)
         .window_setup(ggez::conf::WindowSetup::default()
                     .vsync(true)
-                    .title("Bae I miss you"))                      
+                    .title("Jasmine I miss you"))
         .add_resource_path(resource_dir)
         //.conf(c)
         .build()
